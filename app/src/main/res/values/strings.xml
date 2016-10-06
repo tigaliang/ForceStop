@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ForceStop</string>
+    <string name="action_black_list">Black list</string>
+    <string name="action_about">About</string>
+    <string name="analysing">Analysing&#8230;</string>
+    <string name="lets_go">LET\'S GO</string>
+    <string name="refresh">REFRESH</string>
+    <string name="error">error</string>
+    <string name="null_">null</string>
+    <string name="fmt_app_num"> x%1$d</string>
+    <string name="app_details_settings_force_stop">FORCE STOP</string>
+    <string name="app_details_settings_ok">OK</string>
+    <string name="text_about_force_stop">Usage:\nStep 0: Enable \"ForceStop\" in \"Settings\" &#8212;> \"Accessibility\";\nStep 1: Go to \"Black list\" from the right-top of last page;\nStep 2: Click \"REFRESH\" every time you edit the black list;\nStep 3: Click \"LET\'S GO\" and there your are.\n\nTest on Nexus 5X hosting Android 7.0 only.\n\nContribute your efforts on https://github.com/tigaliang/ForceStop and post any issues through github or liangkangabc@gmail.com.</string>
+</resources>

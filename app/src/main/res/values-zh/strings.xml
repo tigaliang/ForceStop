@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_details_settings_force_stop">强行停止</string>
+    <string name="app_details_settings_ok">确定</string>
+</resources>
