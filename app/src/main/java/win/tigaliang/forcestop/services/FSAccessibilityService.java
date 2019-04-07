@@ -1,4 +1,4 @@
-package win.tigaliang.forcestop;
+package win.tigaliang.forcestop.services;
 
 import android.accessibilityservice.AccessibilityService;
 import android.util.Log;
@@ -7,6 +7,8 @@ import android.view.accessibility.AccessibilityNodeInfo;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
+
+import win.tigaliang.forcestop.R;
 
 /**
  * Created by tigaliang on 2016/10/4.
@@ -28,7 +30,7 @@ public class FSAccessibilityService extends AccessibilityService {
             return;
         }
         synchronized (CALLBACK_ACCESS_LOCK) {
-            sCallback = new WeakReference<FSClient>(callback);
+            sCallback = new WeakReference<>(callback);
         }
     }
 

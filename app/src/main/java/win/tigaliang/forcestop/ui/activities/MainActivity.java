@@ -1,4 +1,4 @@
-package win.tigaliang.forcestop;
+package win.tigaliang.forcestop.ui.activities;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -15,12 +15,14 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import win.tigaliang.forcestop.staffs.AppAnalyzer;
-import win.tigaliang.forcestop.staffs.AppBean;
-import win.tigaliang.forcestop.staffs.AppListAdapter;
-import win.tigaliang.forcestop.staffs.BlackListDao;
-import win.tigaliang.forcestop.staffs.HandlerActivity;
-import win.tigaliang.forcestop.staffs.SingleTaskThread;
+import win.tigaliang.forcestop.services.FSAccessibilityService;
+import win.tigaliang.forcestop.R;
+import win.tigaliang.forcestop.utils.AppAnalyzer;
+import win.tigaliang.forcestop.utils.AppBean;
+import win.tigaliang.forcestop.ui.adapters.AppListAdapter;
+import win.tigaliang.forcestop.utils.BlackListManager;
+import win.tigaliang.forcestop.base.HandlerActivity;
+import win.tigaliang.forcestop.base.SingleTaskThread;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,7 +49,7 @@ public class MainActivity extends HandlerActivity implements View.OnClickListene
             try {
                 Context context = MainActivity.this;
                 List<AppBean> runningApps = AppAnalyzer.getRunningApps(context);
-                String[] blackList = BlackListDao.getBlackList(context);
+                String[] blackList = BlackListManager.getBlackList(context);
                 if (mRunningBlackApp == null) {
                     mRunningBlackApp = new ArrayList<>();
                 } else {

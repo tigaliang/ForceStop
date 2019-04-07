@@ -1,4 +1,4 @@
-package win.tigaliang.forcestop.staffs;
+package win.tigaliang.forcestop.base;
 
 import java.util.List;
 

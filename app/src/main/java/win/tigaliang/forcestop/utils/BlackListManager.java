@@ -1,4 +1,4 @@
-package win.tigaliang.forcestop.staffs;
+package win.tigaliang.forcestop.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -9,15 +9,15 @@ import androidx.annotation.NonNull;
 /**
  * Created by tigaliang on 2016/10/4.
  * <p>
- * BlackListDao:
+ * BlackListManager:
  */
 
-public final class BlackListDao {
+public final class BlackListManager {
     private static final String PREF_BLACK_LIST = "black_list";
     private static final String ITEM_PACKAGES = "packages";
     private static final String DELIMITER = ";";
 
-    private BlackListDao() {
+    private BlackListManager() {
     }
 
     /**

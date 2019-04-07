@@ -1,4 +1,4 @@
-package win.tigaliang.forcestop.staffs;
+package win.tigaliang.forcestop.ui.adapters;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Locale;
 
 import win.tigaliang.forcestop.R;
+import win.tigaliang.forcestop.utils.AppBean;
 
 /**
  * Created by tigaliang on 2016/10/3.

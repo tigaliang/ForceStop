@@ -1,4 +1,4 @@
-package win.tigaliang.forcestop.staffs;
+package win.tigaliang.forcestop.utils;
 
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningAppProcessInfo;

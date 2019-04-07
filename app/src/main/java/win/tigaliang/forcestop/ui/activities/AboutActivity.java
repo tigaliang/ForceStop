@@ -1,4 +1,4 @@
-package win.tigaliang.forcestop;
+package win.tigaliang.forcestop.ui.activities;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -6,6 +6,7 @@ import android.view.MenuItem;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import win.tigaliang.forcestop.R;
 
 /**
  * Created by tigaliang on 2016/10/6.

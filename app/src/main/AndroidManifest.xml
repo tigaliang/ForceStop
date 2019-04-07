@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.activities.MainActivity"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,15 +21,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".BlackListActivity" />
-        <activity android:name=".AboutActivity">
+        <activity android:name=".ui.activities.BlackListActivity" />
+        <activity android:name=".ui.activities.AboutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
 
         <service
-            android:name=".FSAccessibilityService"
+            android:name=".services.FSAccessibilityService"
             android:enabled="true"
             android:exported="true"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">

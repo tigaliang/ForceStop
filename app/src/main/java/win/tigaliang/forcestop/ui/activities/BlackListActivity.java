@@ -1,4 +1,4 @@
-package win.tigaliang.forcestop;
+package win.tigaliang.forcestop.ui.activities;
 
 import android.app.ProgressDialog;
 import android.content.pm.PackageManager;
@@ -19,12 +19,13 @@ import java.util.List;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
-import win.tigaliang.forcestop.staffs.AppAnalyzer;
-import win.tigaliang.forcestop.staffs.AppBean;
-import win.tigaliang.forcestop.staffs.AppListAdapter;
-import win.tigaliang.forcestop.staffs.BlackListDao;
-import win.tigaliang.forcestop.staffs.HandlerActivity;
-import win.tigaliang.forcestop.staffs.SingleTaskThread;
+import win.tigaliang.forcestop.R;
+import win.tigaliang.forcestop.utils.AppAnalyzer;
+import win.tigaliang.forcestop.utils.AppBean;
+import win.tigaliang.forcestop.ui.adapters.AppListAdapter;
+import win.tigaliang.forcestop.utils.BlackListManager;
+import win.tigaliang.forcestop.base.HandlerActivity;
+import win.tigaliang.forcestop.base.SingleTaskThread;
 
 /**
  * Created by tigaliang on 2016/10/3.
@@ -104,7 +105,7 @@ public class BlackListActivity extends HandlerActivity {
         if (list == null) {
             return;
         }
-        String[] blackList = BlackListDao.getBlackList(this);
+        String[] blackList = BlackListManager.getBlackList(this);
         if (blackList.length < 1) {
             return;
         }
@@ -141,7 +142,7 @@ public class BlackListActivity extends HandlerActivity {
         Object[] tmp = selectedPackages.toArray();
         String[] result = new String[tmp.length];
         System.arraycopy(tmp, 0, result, 0, tmp.length);
-        BlackListDao.setBlackList(this, result);
+        BlackListManager.setBlackList(this, result);
     }
 
     private long getAppFirstInstallTime(String pkgName) {
