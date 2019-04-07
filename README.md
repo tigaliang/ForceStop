@@ -1,2 +1,2 @@
 # ForceStop
-Force stop Android apps running in background via the Android feature 'Accessibility'.
+Force stop Android Apps running in background via the Android feature 'Accessibility'.
