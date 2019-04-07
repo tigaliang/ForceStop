@@ -1,9 +1,10 @@
-package com.tigaliang.forcestop.staffs;
+package win.tigaliang.forcestop.staffs;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
 
 /**
  * Created by tigaliang on 2016/10/4.

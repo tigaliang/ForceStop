@@ -1,12 +1,10 @@
-package com.tigaliang.forcestop;
+package win.tigaliang.forcestop;
 
 import android.app.ProgressDialog;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Message;
-import android.support.annotation.Nullable;
-import android.support.v7.app.ActionBar;
 import android.text.TextUtils;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,17 +12,19 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.tigaliang.forcestop.staffs.AppAnalyzer;
-import com.tigaliang.forcestop.staffs.AppBean;
-import com.tigaliang.forcestop.staffs.AppListAdapter;
-import com.tigaliang.forcestop.staffs.BlackListDao;
-import com.tigaliang.forcestop.staffs.HandlerActivity;
-import com.tigaliang.forcestop.staffs.SingleTaskThread;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import win.tigaliang.forcestop.staffs.AppAnalyzer;
+import win.tigaliang.forcestop.staffs.AppBean;
+import win.tigaliang.forcestop.staffs.AppListAdapter;
+import win.tigaliang.forcestop.staffs.BlackListDao;
+import win.tigaliang.forcestop.staffs.HandlerActivity;
+import win.tigaliang.forcestop.staffs.SingleTaskThread;
 
 /**
  * Created by tigaliang on 2016/10/3.

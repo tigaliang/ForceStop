@@ -1,4 +1,4 @@
-package com.tigaliang.forcestop.staffs;
+package win.tigaliang.forcestop.staffs;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -8,10 +8,10 @@ import android.widget.BaseAdapter;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import com.tigaliang.forcestop.R;
-
 import java.util.List;
 import java.util.Locale;
+
+import win.tigaliang.forcestop.R;
 
 /**
  * Created by tigaliang on 2016/10/3.

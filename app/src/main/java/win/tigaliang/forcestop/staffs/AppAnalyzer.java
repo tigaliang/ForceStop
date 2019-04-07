@@ -1,4 +1,4 @@
-package com.tigaliang.forcestop.staffs;
+package win.tigaliang.forcestop.staffs;
 
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningAppProcessInfo;
@@ -7,12 +7,13 @@ import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.NonNull;
 
 /**
  * Created by tigaliang on 2016/10/3.

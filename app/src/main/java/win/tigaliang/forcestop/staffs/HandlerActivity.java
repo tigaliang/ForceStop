@@ -1,14 +1,15 @@
-package com.tigaliang.forcestop.staffs;
+package win.tigaliang.forcestop.staffs;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 
 import java.lang.ref.WeakReference;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Created by tigaliang on 2016/10/3.
@@ -22,7 +23,7 @@ public abstract class HandlerActivity extends AppCompatActivity {
     private static final class MyHandler extends Handler {
         private WeakReference<HandlerActivity> mPageRef;
 
-        public MyHandler(HandlerActivity page) {
+        MyHandler(HandlerActivity page) {
             super(Looper.getMainLooper());
             mPageRef = new WeakReference<>(page);
         }

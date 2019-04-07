@@ -1,4 +1,4 @@
-package com.tigaliang.forcestop;
+package win.tigaliang.forcestop;
 
 import android.accessibilityservice.AccessibilityService;
 import android.util.Log;

@@ -1,4 +1,4 @@
-package com.tigaliang.forcestop;
+package win.tigaliang.forcestop;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -15,12 +15,12 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.tigaliang.forcestop.staffs.AppAnalyzer;
-import com.tigaliang.forcestop.staffs.AppBean;
-import com.tigaliang.forcestop.staffs.AppListAdapter;
-import com.tigaliang.forcestop.staffs.BlackListDao;
-import com.tigaliang.forcestop.staffs.HandlerActivity;
-import com.tigaliang.forcestop.staffs.SingleTaskThread;
+import win.tigaliang.forcestop.staffs.AppAnalyzer;
+import win.tigaliang.forcestop.staffs.AppBean;
+import win.tigaliang.forcestop.staffs.AppListAdapter;
+import win.tigaliang.forcestop.staffs.BlackListDao;
+import win.tigaliang.forcestop.staffs.HandlerActivity;
+import win.tigaliang.forcestop.staffs.SingleTaskThread;
 
 import java.util.ArrayList;
 import java.util.List;
