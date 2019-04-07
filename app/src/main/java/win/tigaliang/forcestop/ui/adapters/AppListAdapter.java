@@ -58,13 +58,13 @@ public class AppListAdapter extends BaseAdapter {
             convertView = View.inflate(mContext, R.layout.lvi_app_check, null);
             vh = new ViewHolder();
             vh.icon = convertView.findViewById(R.id.view_icon);
-            vh.appName = (TextView) convertView.findViewById(R.id.text_view_app_name);
+            vh.appName = convertView.findViewById(R.id.text_view_app_name);
             if (isCheckBoxEnabled) {
-                vh.checkBox = (CheckBox) convertView.findViewById(R.id.check_box_select);
+                vh.checkBox = convertView.findViewById(R.id.check_box_select);
                 vh.checkBox.setVisibility(View.VISIBLE);
             }
             if (isNumberEnabled) {
-                vh.number = (TextView) convertView.findViewById(R.id.text_view_num);
+                vh.number = convertView.findViewById(R.id.text_view_num);
                 vh.number.setVisibility(View.VISIBLE);
             }
             convertView.setTag(vh);

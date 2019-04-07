@@ -20,12 +20,12 @@ import java.util.List;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import win.tigaliang.forcestop.R;
-import win.tigaliang.forcestop.utils.AppAnalyzer;
-import win.tigaliang.forcestop.utils.AppBean;
-import win.tigaliang.forcestop.ui.adapters.AppListAdapter;
-import win.tigaliang.forcestop.utils.BlackListManager;
 import win.tigaliang.forcestop.base.HandlerActivity;
 import win.tigaliang.forcestop.base.SingleTaskThread;
+import win.tigaliang.forcestop.ui.adapters.AppListAdapter;
+import win.tigaliang.forcestop.utils.AppAnalyzer;
+import win.tigaliang.forcestop.utils.AppBean;
+import win.tigaliang.forcestop.utils.BlackListManager;
 
 /**
  * Created by tigaliang on 2016/10/3.
@@ -177,7 +177,7 @@ public class BlackListActivity extends HandlerActivity {
         mLoadingDialog = new ProgressDialog(this);
         mLoadingDialog.setMessage(getString(R.string.analysing));
         mListViewAdapter = new AppListAdapter(this, true, false);
-        ListView appListView = (ListView) findViewById(R.id.list_view_app);
+        ListView appListView = findViewById(R.id.list_view_app);
         if (appListView != null) {
             appListView.setCacheColorHint(Color.TRANSPARENT);
             appListView.setAdapter(mListViewAdapter);

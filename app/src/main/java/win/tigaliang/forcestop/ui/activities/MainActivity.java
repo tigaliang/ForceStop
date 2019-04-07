@@ -122,7 +122,7 @@ public class MainActivity extends HandlerActivity implements View.OnClickListene
         mLoadingDialog = new ProgressDialog(this);
         mLoadingDialog.setMessage(getString(R.string.analysing));
         mListViewAdapter = new AppListAdapter(this, false, true);
-        ListView appListView = (ListView) findViewById(R.id.list_view_app);
+        ListView appListView = findViewById(R.id.list_view_app);
         if (appListView != null) {
             appListView.setCacheColorHint(Color.TRANSPARENT);
             appListView.setAdapter(mListViewAdapter);
